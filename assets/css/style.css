@@ -25,6 +25,9 @@
 .ul-menu-color-download-cv{
      background-color: #525252;   
 }
+.bg-color-personal-info{
+    background-color: #f4f4f4;
+}
 
 /*---------------------------------------Special paddings,margins,text*/
 
@@ -49,11 +52,7 @@ h4 {
     display:inline-block;
 }
 
-.section-column {
-    padding: 0 30px 30px;
-    float: none;
-    display: table-cell;
-}
+
 
 .row-table {
     display: table;
@@ -74,7 +73,7 @@ header {
 }
 
 .heading {
-    margin-left: 50px
+    margin-left: 50px;
 }
 
 .logo {
@@ -86,6 +85,7 @@ header {
     transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
 }
 
 .name{
@@ -158,7 +158,7 @@ footer {
     background-color: #525252;
     color:#fafafa;
     min-height: 120px;
-    margin:0px;
+    margin: 0;
 }
 
 footer .cv-pdf i{
@@ -203,4 +203,84 @@ footer .cv-pdf i:hover{
 
 #footer-details{
     margin:20px;
+}
+
+/*---------------------------------------three reasons*/
+
+.three-reasons-icon{
+    font-size:26px;
+    color:#e67e22;
+}
+
+.three-reasons-heading{
+    margin-bottom: 15px;
+    
+}
+
+/*---------------------------------------personal info*/
+
+.personal-info-item{
+    margin-bottom: 20px;
+    display: block;
+    clear: both;
+}
+
+.personal-info-item .key,
+.personal-info-item .value{
+    padding-right: 8px;
+    
+}
+
+.personal-info-item .key p,
+.personal-info-item .value p{
+    margin: 0;
+    
+}
+
+.personal-info-item .key{
+    display: inline-block;
+    width:30%;
+    margin-right: 21px;
+    padding-top: 2px;
+    vertical-align: top;
+}
+
+.personal-info-item .key p{
+    font-weight: 700;
+}
+
+.personal-info-item .value{
+    display: inline-block;
+    position: relative;
+    width: 60%;
+}
+
+/*---------------------------------------skills*/
+
+.progress {
+    position: relative;
+    height: 25px;
+    
+}
+
+.progress-type {
+    position: absolute;
+    left: 0px;
+    font-weight: 400;
+    padding: 3px 30px 2px 10px;
+    color: #fafafa;
+    background-color: rgba(25,25,25, 0.2)
+}
+
+.progress-section {
+    margin:40px 20px;
+}
+
+/*---------------------------------------media*/
+@media(min-width: 992px){
+.section-column {
+    padding: 0 30px 30px;
+    float: none;
+    display: table-cell;
+}
 }
